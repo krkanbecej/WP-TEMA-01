@@ -2,7 +2,7 @@ html,body{
 
     margin: 0;
     color: #333;
-    bacgraund:#eee;
+    background-color:#eee;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     
 }
@@ -10,9 +10,19 @@ body{
     padding: 20px;
 }
 h1{
-    color: blue;
+    color: green;
 }
 footer{
     display: block;
-    background-color: darkgrey;
+    background-color: yellow;
+}
+.row{
+
+    display: block;
+}
+header{
+	background-color:gray;
+}
+#navigation{
+	display:block;
 }

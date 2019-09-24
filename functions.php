@@ -9,7 +9,7 @@ function mojatema_teme_setup(){
    
     add_theme_support('menus');
  
-    register_nav_menu('Glavni', 'glavna navigacija');
+    register_nav_menu('nav menu', 'glavna navigacija');
     register_nav_menu('drugi', 'futer navigacija');
 }
 
