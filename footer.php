@@ -7,7 +7,7 @@
     
           <div class="col-lg-8 col-md-10 ">
           <p>Ovo je moj futer</p>
-			  <div id="navigation">
+			  <div id="futernav">
 				  
 			 
            <?php wp_nav_menu( array('theme_location' =>'drugi' ));  ?>

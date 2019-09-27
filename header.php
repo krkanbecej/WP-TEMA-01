@@ -14,33 +14,18 @@
 <body >
   
 	<header>
+  <div class="navbar-header page-scroll">
   <div id="navigation">
-				  
-			 
+  
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand"><?php bloginfo( 'name' ); ?></a>
           <?php wp_nav_menu( array('theme_location' =>'moj_meni' ));  ?>
-          <div class="float-right">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand"><?php bloginfo( 'name' ); ?></a>
-      </div>
+          
+ </div>
 </div>
     <div class="container-fluid">
       
+ 
 
-      <div class="navbar-header page-scroll">
-
-      <nav class="navbar navbar-default navbar-custom ">
-      <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-		  
-      <?php
-wp_nav_menu( array( 
-    'theme_location' => 'my-custom-menu', 
-    'container_class' => 'custom-menu-class' ) ); 
-?>
-</ul>
-      </div>
-      </div> 
-    </div>
-  </nav>
 </header>
   <div class="container">
       <div class="row">

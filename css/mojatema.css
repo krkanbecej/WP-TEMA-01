@@ -10,7 +10,7 @@ body{
     padding: 20px;
 }
 h1{
-    color: green;
+    color: #333;
 }
 footer{
     display: block;
@@ -20,28 +20,48 @@ footer{
 
     display: block;
 }
-h#header { 
+#header { 
     background-color:#4C0000;
     height:120px;
     width:100%;
-    padding:20px; 
+    padding:20px 0px; 
     } 
+/* navigacija za glavni meni na vrhu stranice */
 #navigation{
-	display:block;
+    display:block;
+    
 }
-.custom-menu-class ul {
+#navigation ul {
     list-style-type: none;
-    list-style: none;
-    list-style-image: none;
-}
-.custom-menu-class li {
-    padding: 20px;
-    display: inline;
-}
-ul{
-    display: flex;
-    padding: 20px;
-}
-a{
-    padding: 10px;
-}
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+  }
+  
+  #navigation li {
+    float: left;
+    
+  }
+  
+  #navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color  on hover */
+  #navigation li a:hover {
+    background-color: rgb(180, 184, 187);
+  }
+  #navigation ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  /* da bi se promenio z indeks odnosno umesto auto u 1000 jer je slika išla preko menija */
+  #menu-prvi{
+      z-index:1000 ;
+  }
