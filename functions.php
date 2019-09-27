@@ -9,7 +9,7 @@ function mojatema_teme_setup(){
    
     add_theme_support('menus');
  
-    register_nav_menu('nav menu', 'glavna navigacija');
+    register_nav_menu('moj_meni', 'glavna navigacija');
     register_nav_menu('drugi', 'futer navigacija');
 }
 
@@ -47,4 +47,8 @@ function add_menu_list_item_class($classes, $item, $args) {
     }
     return $classes;
 }
-add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3); ?>
+add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3); 
+function wpb_custom_new_menu() {
+  register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );?>

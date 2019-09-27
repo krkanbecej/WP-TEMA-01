@@ -20,9 +20,28 @@ footer{
 
     display: block;
 }
-header{
-	background-color:gray;
-}
+h#header { 
+    background-color:#4C0000;
+    height:120px;
+    width:100%;
+    padding:20px; 
+    } 
 #navigation{
 	display:block;
+}
+.custom-menu-class ul {
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+}
+.custom-menu-class li {
+    padding: 20px;
+    display: inline;
+}
+ul{
+    display: flex;
+    padding: 20px;
+}
+a{
+    padding: 10px;
 }

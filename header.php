@@ -12,25 +12,33 @@
    <?php wp_head(); ?>
 </head>
 <body >
+  
 	<header>
-<nav class="navbar navbar-default navbar-custom ">
-    <div class="container-fluid">
-      <div class="navbar-header page-scroll">
+  <div id="navigation">
+				  
+			 
+          <?php wp_nav_menu( array('theme_location' =>'moj_meni' ));  ?>
+          <div class="float-right">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand"><?php bloginfo( 'name' ); ?></a>
       </div>
+</div>
+    <div class="container-fluid">
+      
 
+      <div class="navbar-header page-scroll">
+
+      <nav class="navbar navbar-default navbar-custom ">
       <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
 		  
-     <?php wp_nav_menu(array(
-        'menu' => 'drugi',
-        'items_wrap'=>'%3$s',
-        'container' => false,
-        'list_item_class' => "nav-item",
-        'link_class' => "nav-link",
-        )); ?> 
+      <?php
+wp_nav_menu( array( 
+    'theme_location' => 'my-custom-menu', 
+    'container_class' => 'custom-menu-class' ) ); 
+?>
 </ul>
       </div>
+      </div> 
     </div>
   </nav>
 </header>
