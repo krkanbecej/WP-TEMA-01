@@ -12,7 +12,8 @@
 			 
            <?php wp_nav_menu( array('theme_location' =>'drugi' ));  ?>
  </div>
-          </div>
+
+</div>
      
   </footer><!-- /footer -->
 

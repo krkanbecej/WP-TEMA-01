@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Aleksandar Karapandza">
     <title>Krkina tema</title>
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+            <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
    <?php wp_head(); ?>
 </head>

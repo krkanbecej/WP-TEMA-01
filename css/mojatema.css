@@ -7,14 +7,15 @@ html,body{
     
 }
 body{
-    padding: 20px;
+    padding-top: 40px;
 }
 h1{
     color: #333;
 }
 footer{
+  margin-top: 7%;
     display: block;
-    background-color: yellow;
+    background-color: rgb(22, 21, 44);
 }
 .row{
 
@@ -36,7 +37,7 @@ footer{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: grey;
+    background-color: #eee;
   }
   
   #navigation li {
@@ -46,7 +47,7 @@ footer{
   
   #navigation li a {
     display: block;
-    color: white;
+    color: #333;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -64,4 +65,29 @@ footer{
   /* da bi se promenio z indeks odnosno umesto auto u 1000 jer je slika išla preko menija */
   #menu-prvi{
       z-index:1000 ;
+  }
+
+
+
+  #futernav {
+    width: 200px;
+  }
+  #futernav li{
+    list-style-type: none; 
+  }
+  #futernav a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  #futernav a:hover {
+    background-color: #ccc;
+  }
+  
+  #futernav a.active {
+    background-color: #4CAF50;
+    color: white;
   }
