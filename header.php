@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!DOCTYPE html>
+<html>
+<head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -11,15 +14,20 @@
     <script src="main.js"></script>
    <?php wp_head(); ?>
 </head>
-<body >
+<body <?php body_class(); ?>>
   
 	<header>
-  <div class="navbar-header page-scroll">
-  <div id="navigation">
   
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand"><?php bloginfo( 'name' ); ?></a>
-          <?php wp_nav_menu( array('theme_location' =>'moj_meni' ));  ?>
-          
+  <div id="navigation">
+   <!-- Ubacivanje  loga u temu logo se može  menjati -->
+  <?php if (has_custom_logo()) the_custom_logo();
+  else { ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand"><?php bloginfo( 'name' ); ?></a>  
+     <?php } ?>  
+  
+  <div class="navbar-header page-scroll">
+               <?php wp_nav_menu( array('theme_location' =>'moj_meni' ));  ?>
+    </div>      
  </div>
 </div>
     <div class="container-fluid">
@@ -29,4 +37,3 @@
 </header>
   <div class="container">
       <div class="row">
-   

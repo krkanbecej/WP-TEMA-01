@@ -14,6 +14,17 @@ function mojatema_teme_setup(){
 }
 
 add_action('init', 'mojatema_teme_setup'); 
+// funkcija za omogućavanje ubacivanja i menjanje logoa u temu
+function theme_prefix_setup() {
+	
+	add_theme_support( 'custom-logo', array(
+		'height'      => 100,
+		'width'       => 100,
+		'flex-width' => true,
+	) );
+
+}
+add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
 function bsimple_scripts() {
     wp_enqueue_style( 'bsimple-style', get_stylesheet_uri() );
@@ -51,4 +62,7 @@ add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
 function wpb_custom_new_menu() {
   register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
 }
-add_action( 'init', 'wpb_custom_new_menu' );?>
+add_action( 'init', 'wpb_custom_new_menu' );
+
+
+?>

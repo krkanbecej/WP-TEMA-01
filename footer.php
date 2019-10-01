@@ -3,17 +3,16 @@
    </div><!-- /.row -->
     </div><!-- /.container -->
 
-<footer>
+<footer><!--footer -->
     
-          <div class="col-lg-8 col-md-10 ">
-          <p>Ovo je moj futer</p>
-			  <div id="futernav">
-				  
+      <div class="col-lg-8 col-md-10 ">
+          <h3>Ovo je moj futer</h3>
 			 
-           <?php wp_nav_menu( array('theme_location' =>'drugi' ));  ?>
- </div>
+        <div id="futernav">
+				     <?php wp_nav_menu( array('theme_location' =>'drugi' ));  ?>
+        </div>
 
-</div>
+      </div>
      
   </footer><!-- /footer -->
 
