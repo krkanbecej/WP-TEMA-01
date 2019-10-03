@@ -19,21 +19,23 @@
 	<header>
   
   <div id="navigation">
+  <div id="meni"  class="container">
    <!-- Ubacivanje  loga u temu logo se može  menjati -->
+   <div id="logobox">
   <?php if (has_custom_logo()) the_custom_logo();
   else { ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand"><?php bloginfo( 'name' ); ?></a>  
      <?php } ?>  
-  
+     </div><!-- /logobox -->
+     <div id="navbox">
   <div class="navbar-header page-scroll">
-               <?php wp_nav_menu( array('theme_location' =>'moj_meni' ));  ?>
-    </div>      
- </div>
-</div>
-    <div class="container-fluid">
-      
- 
+               <?php wp_nav_menu( array('theme_location' =>'moj_meni' )); ?>
+               </div> <!-- /navbox -->
+  </div><!-- /meni -->
+        </div>  <!-- /navigation -->    
+        </header>
 
-</header>
-  <div class="container">
+    <div class="container">
+ 
+  
       <div class="row">

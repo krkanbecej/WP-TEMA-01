@@ -1,19 +1,17 @@
 <?php get_header(); ?>
-<h3></h3>
+<!-- Telo 1  main-column -->
+<div class="main-column">
   <?php
     if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
-
-    <!-- <div id="post-<?php the_ID(); ?>">
-        <h2><?php the_title(); ?></h2>
-        <div class="post-excerpt"><?php the_excerpt(); ?></div>
-    </div> -->
-
+<?phpget_template_part ('content', get_post_format());?>
+    
+    <?php the_content(); ?>
     <?php endwhile;
-    endif;
+       endif;
     ?>
- <?php the_content(); ?> 
+ </div><!-- kraj Telo 1  /main-column -->
 
-
+ <?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
 

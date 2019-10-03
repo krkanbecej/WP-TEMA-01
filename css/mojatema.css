@@ -1,48 +1,72 @@
 html,body{
 
-    margin: 0;
+    
     color: #333;
     background-color:#eee;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     
 }
 body{
-    padding-top: 40px;
+    padding-top: 0px;
 }
 h1{
     color: #333;
 }
 footer{
-  margin-top: 7%;
+  
     display: block;
     background-color: rgb(22, 21, 44);
 }
 .row{
 
     display: block;
+    
 }
+/* telo1 main column */
+.main-column{
+  width: 66%;
+  float: left;
+  }
+/* telo2 secondary column */
+.secondary-column{
+  width: 30%;
+  float: right;
+  padding-top: 10%;
+  color: #eee;
+}  
+
 #header { 
+  
     background-color:#4C0000;
     height:120px;
     width:100%;
-    padding:20px 0px; 
+    
+    
     } 
 /* navigacija za glavni meni na vrhu stranice */
+#meni{
+  display: flex;
+  justify-content:space-between;
+}
 #navigation{
-    display:block;
+    
+    background-color: #333;
+    margin: 0px -20px;
     
 }
+
 #navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #eee;
+   
   }
   
   #navigation li {
-    float: left;
     
+    float: left;  
   }
   
   #navigation li a {
@@ -57,15 +81,14 @@ footer{
   #navigation li a:hover {
     background-color: rgb(180, 184, 187);
   }
-  #navigation ul {
+  #navigation  {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index:1000 ;
   }
-  /* da bi se promenio z indeks odnosno umesto auto u 1000 jer je slika išla preko menija */
-  #menu-prvi{
-      z-index:1000 ;
-  }
+  
+  
 
 
 

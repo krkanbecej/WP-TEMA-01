@@ -18,9 +18,8 @@ add_action('init', 'mojatema_teme_setup');
 function theme_prefix_setup() {
 	
 	add_theme_support( 'custom-logo', array(
-		'height'      => 100,
-		'width'       => 100,
-		'flex-width' => true,
+		
+		
 	) );
 
 }
@@ -64,5 +63,14 @@ function wpb_custom_new_menu() {
 }
 add_action( 'init', 'wpb_custom_new_menu' );
 
-
+// <!-- dodavanje naših widžet lokacija -->
+function ourWidgetsStart(){
+register_sidebar(array(
+    'name' => 'sidebar',
+    'id' => 'sidebar1',
+    'before_widget' => '<div id="futernav">', // ovako možemo da konrolišemo stil widgeta
+    'after_widget' => '</div>'// ako nismo ovo odredili widget će koristiti podrazumevani stil
+));
+}
+add_action('widgets_init', 'ourWidgetsStart');
 ?>
