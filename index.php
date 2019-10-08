@@ -10,8 +10,9 @@
        endif;
     ?>
  </div><!-- kraj Telo 1  /main-column -->
-
+ </header>
  <?php get_sidebar(); ?>
+ 
 <?php get_footer(); ?>
 
 

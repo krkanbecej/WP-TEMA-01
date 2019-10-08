@@ -1,31 +1,37 @@
 html,body{
 
     
-    color: #333;
-    background-color:#eee;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    /* color: #333;
+    background-color:#eee; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 body{
-    padding-top: 0px;
+    margin-top: 0px;
 }
 h1{
     color: #333;
 }
 footer{
   
-    display: block;
-    background-color: rgb(22, 21, 44);
+    display: flex;
+    
+    /* background-color: rgb(22, 21, 44); */
+}
+header{
+  display: block;
+  
 }
 .row{
 
     display: block;
-    
+    margin-top: 0px;
 }
 /* telo1 main column */
 .main-column{
   width: 66%;
   float: left;
+  padding-top: 10%;
   }
 /* telo2 secondary column */
 .secondary-column{
@@ -35,10 +41,10 @@ footer{
   color: #eee;
 }  
 
-#header { 
+header { 
   
-    background-color:#4C0000;
-    height:120px;
+    /* background-color:#4C0000; */
+    height:320px;
     width:100%;
     
     
@@ -47,11 +53,12 @@ footer{
 #meni{
   display: flex;
   justify-content:space-between;
+
 }
 #navigation{
     
     background-color: #333;
-    margin: 0px -20px;
+    
     
 }
 
@@ -60,7 +67,7 @@ footer{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #eee;
+    background-color: #333;
    
   }
   
@@ -71,7 +78,7 @@ footer{
   
   #navigation li a {
     display: block;
-    color: #333;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -88,8 +95,11 @@ footer{
     z-index:1000 ;
   }
   
-  
-
+  /* footer area raspored dodatih widgeta i stil */
+  .footer_widget_area{
+    display: flex;
+    /* background-color: #4C0000; */
+  }
 
 
   #futernav {

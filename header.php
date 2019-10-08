@@ -1,3 +1,16 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ *  
+ * @package WordPress
+ * @subpackage 
+ * @since 1.0
+ * @version 1.0
+ */ 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +25,7 @@
     <title>Krkina tema</title>
             <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
-   <?php wp_head(); ?>
+   <?php wp_head(); ?><!-- Ubacivanje funkcija u head sekciju -->
 </head>
 <body <?php body_class(); ?>>
   
@@ -33,9 +46,9 @@
                </div> <!-- /navbox -->
   </div><!-- /meni -->
         </div>  <!-- /navigation -->    
-        </header>
-
+        
+        </header> 
     <div class="container">
  
-  
+    
       <div class="row">
