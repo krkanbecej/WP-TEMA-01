@@ -13,7 +13,6 @@
  </div><!-- kraj Telo 1  /main-column -->
  
  <?php get_sidebar(); ?>
- 
-<?php get_footer(); ?>
+ <h1> Da vidimo dali ovo radi</h1>
 
-
+ <?php get_footer(); ?>

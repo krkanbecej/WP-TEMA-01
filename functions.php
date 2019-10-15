@@ -2,7 +2,8 @@
 // funkcija za dodavanje sopstvenog stila u temu 
 function mojatema_script_enqueue(){
 wp_enqueue_style('customstyle',get_template_directory_uri() .'/css/mojatema.css', array(), '1.0.0', 'all');
-wp_enqueue_script('customjs', get_template_directory_uri() .'/js/mojatema.js', array(), '1.0.0', true);
+wp_enqueue_script('customjs', get_template_directory_uri() .'/js/mojatema.js', array(), '1.0.0', true);?>
+<?php 
 }
 
 add_action ('wp_enqueue_scripts'  , 'mojatema_script_enqueue'); 
@@ -88,4 +89,5 @@ register_sidebar(array(
 ));
 }
 add_action('widgets_init', 'ourWidgetsStart');?>
+
 

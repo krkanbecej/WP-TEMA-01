@@ -36,6 +36,6 @@
      
   </footer><!-- /footer -->
 
- 
+  <?php wp_footer(); ?><!-- dodavanje java skriptova na kraju dokumenta  -->
 </body>
 </html>
