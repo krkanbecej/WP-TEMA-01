@@ -1,44 +1,33 @@
 html,body{
-
-    
-    /* color: #333;
-    background-color:#eee; */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 body{
-    margin-top: 0px;
-   
+      margin-top: 0px;
 }
 h1{
-    color: #333;
+      color: #333;
 }
 footer{
-  
-    display: flex;
- 
-    
-}
+      display: flex;
+ }
 .navbar_brand a{
-  color: #eee;
+      color: #eee;
 } 
 header{
-  display: block;
-  height:320px;
-  width:100%;
+      display: block;
+      height:320px;
+      width:100%;
 }
 .row{
-
     display: block;
     margin-top: 0px;
 }
 /* telo1 main column */
 .main-column{
-  color: #eee;
-  width: 66%;
-  float: left;
-  padding-top: 10%;
+      color: #eee;
+      width: 66%;
+      float: left;
+      padding-top: 10%;
   
   }
 /* telo2 secondary column */
@@ -51,50 +40,54 @@ header{
 
 
 /* navigacija za glavni meni na vrhu stranice */
-#meni{
-  display: flex;
-  justify-content:space-between;
-
-}
-#navigation{
-    
-    background-color: #333;
-    
-    
-}
-
 #navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-   
-  }
+  display: flex;
+  text-decoration: none;
   
-  #navigation li {
-    
-    float: left;  
+}
+ #navigation ul li a:link,
+ #navigation ul li a:visited{
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 18px;
+  background-color: #333;
+  text-transform: uppercase;}
+/* Change the link color  on hover */
+  #navigation ul li a:hover {
+    background-color: grey;
   }
-  
-  #navigation li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color  on hover */
-  #navigation li a:hover {
-    background-color: rgb(180, 184, 187);
+/*  stil a:activ  aktivna stranica menija*/
+  #navigation ul li.current-menu-item a:link,
+  #navigation ul li.current-menu-item a:visited{
+    background-color: grey;
+color: #eee;
   }
   #navigation {
     position: fixed;
     top: 25px;/* privremeno zbog vordpresovog navigacionog bara */
     width: 100%;
     z-index:1000 ;
+    background-color: #333;
   }
+
+  #navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+/* logobox */
+  #logobox a{
+    color:greenyellow;
+    float: left;
+    padding-top: 15px;
+  }
+  /* navbox */
+ #navbox{
+   float: right;
+ }
   
   /* footer area raspored dodatih widgeta i stil */
   .footer_widget_area{

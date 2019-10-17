@@ -26,7 +26,7 @@
 </head>
 <body <?php body_class(); ?>>
   
-	<header>
+	
   
   <div id="navigation">
   <div id="meni"  class="container">
@@ -37,15 +37,14 @@
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand"><?php bloginfo( 'name' ); ?></a>  
      <?php } ?>  
      </div><!-- /logobox -->
-     <div id="navbox">
-  <div class="navbar-header page-scroll">
-               <?php wp_nav_menu( array('theme_location' =>'moj_meni' )); ?>
+     <div id="navbox"><!-- navbox -->
+                 <?php wp_nav_menu( array('theme_location' =>'moj_meni' )); ?>
                </div> <!-- /navbox -->
   </div><!-- /meni -->
         </div>  <!-- /navigation -->    
         
-        </header> 
     <div class="container">
  
     
       <div class="row">
+      

@@ -1,28 +1,29 @@
-<?php
+<!-- <?php
 // funkcija za dodavanje sopstvenog stila u temu 
 function mojatema_script_enqueue(){
-wp_enqueue_style('customstyle',get_template_directory_uri() .'/css/mojatema.css', array(), '1.0.0', 'all');
-wp_enqueue_script('customjs', get_template_directory_uri() .'/js/mojatema.js', array(), '1.0.0', true);?>
+    wp_enqueue_style('customstyle',get_template_directory_uri() .'/css/mojatema.css', array(), '1.0.0', 'all');
+    wp_enqueue_script('customjs', get_template_directory_uri() .'/js/mojatema.js', array(), '1.0.0', true);?> -->
+
 <?php 
 }
 
 add_action ('wp_enqueue_scripts'  , 'mojatema_script_enqueue'); 
 
+
+
 function mojatema_teme_setup(){
        add_theme_support('menus');
  
-    register_nav_menu('moj_meni', 'glavna navigacija');
+    register_nav_menu('prvi', 'glavna navigacija');
     register_nav_menu('drugi', 'futer navigacija');
 }
 
 add_action('init', 'mojatema_teme_setup'); 
+
 // funkcija za omogućavanje ubacivanja i menjanje logoa u temu
 function theme_prefix_setup() {
 	
-	add_theme_support( 'custom-logo', array(
-		
-		
-	) );
+    add_theme_support( 'custom-logo', array());
 
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
@@ -34,12 +35,10 @@ function bsimple_scripts() {
     wp_enqueue_style( 'bsimple-fontawesome', get_template_directory_uri() . '/css/fa-all.min.css' );
     wp_enqueue_style( 'bsimple-font1', "https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" );
     wp_enqueue_style( 'bsimple-font2', "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" );
-
     wp_enqueue_script( 'bsimple-jq', get_template_directory_uri() . '/js/jquery.min.js');
     wp_enqueue_script( 'bsimple-bootstrap', get_template_directory_uri() . '/js/bootstrap.bundle.min.js');
     wp_enqueue_script( 'bsimple-clean', get_template_directory_uri() . '/js/clean-blog.min.js');
-    wp_enqueue_style('customstyle',get_template_directory_uri() .'/css/mojatema.css', array(), '1.0.0', 'all');
-    wp_enqueue_script('customjs', get_template_directory_uri() .'/js/mojatema.js', array(), '1.0.0', true);
+    
 } 
  // omogućuje izmenu pozadine umetanje slike  
 add_theme_support('menus');
@@ -89,5 +88,4 @@ register_sidebar(array(
 ));
 }
 add_action('widgets_init', 'ourWidgetsStart');?>
-
 
