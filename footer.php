@@ -1,8 +1,6 @@
     
   <!-- Footer -->
-   </div><!-- /.row -->
-    </div><!-- /.container -->
-
+   </div>
 <footer><!--footer -->
     
     <div class='clearfix'></div>

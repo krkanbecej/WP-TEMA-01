@@ -15,8 +15,9 @@ footer{
 } 
 header{
       display: block;
-      height:320px;
+      height:620px;
       width:100%;
+      background-color:grey;
 }
 .row{
     display: block;
@@ -70,6 +71,7 @@ color: #eee;
     width: 100%;
     z-index:1000 ;
     background-color: #333;
+   padding-bottom: 15px;
   }
 
   #navigation ul {
@@ -94,7 +96,7 @@ color: #eee;
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
-    background-color: #eee;
+    background-color: #333;
   }
 
  

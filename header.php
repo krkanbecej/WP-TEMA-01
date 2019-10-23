@@ -25,9 +25,7 @@
    <?php wp_head(); ?><!-- Ubacivanje funkcija u head sekciju -->
 </head>
 <body <?php body_class(); ?>>
-  
-	
-  
+  <!--navigacija  -->
   <div id="navigation">
   <div id="meni"  class="container">
    <!-- Ubacivanje  loga u temu logo se može  menjati -->
@@ -38,13 +36,13 @@
      <?php } ?>  
      </div><!-- /logobox -->
      <div id="navbox"><!-- navbox -->
-                 <?php wp_nav_menu( array('theme_location' =>'moj_meni' )); ?>
+                 <?php wp_nav_menu( array('theme_location' =>'prvi' )); ?>
                </div> <!-- /navbox -->
+              
   </div><!-- /meni -->
         </div>  <!-- /navigation -->    
         
-    <div class="container">
- 
-    
+        <div class="container">
+     
       <div class="row">
       

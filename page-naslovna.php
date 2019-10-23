@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+    
 <!-- Telo 1  main-column -->
 <div class="main-column">
   <?php
@@ -11,11 +12,8 @@
        endif;
     ?>
  </div><!-- kraj Telo 1  /main-column -->
- 
- <?php get_sidebar(); ?>
  </div><!-- /.row -->
     </div><!-- /.container -->
-
+    </header>
+ 
 <?php get_footer(); ?>
-
-

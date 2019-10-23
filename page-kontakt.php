@@ -1,5 +1,5 @@
 
-<?php get_header(); ?>
+  <?php get_header(); ?>   
 <header>
            <h2>da napišemo nešto u hederu</h2>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at ut aliquid exercitationem quis voluptatem facilis repellat, incidunt sapiente veniam consequatur illum, itaque magni. Ea ut quaerat repellendus sunt animi.</p>
@@ -15,7 +15,15 @@
        endif;
     ?>
  </div><!-- kraj Telo 1  /main-column -->
- 
+ <div class = "page-header">
+         <h1>
+            Header
+            <small>Subtext for header</small>
+         </h1>
+      </div>
+ <div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
  
  <h1> Da vidimo dali ovo radi</h1>
 
