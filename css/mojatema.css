@@ -15,7 +15,7 @@ footer{
 } 
 header{
       display: block;
-      height:620px;
+      /* height:620px; */
       width:100%;
       background-color:grey;
 }
@@ -126,4 +126,7 @@ color: #eee;
   }
 .page_kontakt bodi{
   background-image: none;
+}
+.secondary-column p{
+text-align: justify;
 }
