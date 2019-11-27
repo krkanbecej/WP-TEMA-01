@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="separator"></div>
 <!-- Telo 1  main-column -->
 <div class="main-column">
   <?php

@@ -13,16 +13,22 @@ footer{
 .navbar_brand a{
       color: #eee;
 } 
+.separator{
+  display:block;
+  height;: 100px; 
+}
 header{
       display: block;
       /* height:620px; */
       width:100%;
-      background-color:grey;
+      background-color:#aa8800;
 }
 .row{
     display: block;
     margin-top: 0px;
 }
+
+
 /* telo1 main column */
 .main-column{
       color: #eee;
@@ -63,7 +69,7 @@ header{
   #navigation ul li.current-menu-item a:link,
   #navigation ul li.current-menu-item a:visited{
     background-color: grey;
-color: #eee;
+color: #ffff00;
   }
   #navigation {
     position: fixed;
@@ -82,7 +88,7 @@ color: #eee;
     
 /* logobox */
   #logobox a{
-    color:greenyellow;
+    color:#ffff00;
     float: left;
     padding-top: 15px;
   }
@@ -96,7 +102,7 @@ color: #eee;
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
-    background-color: #333;
+    background-color: #d64161;
   }
 
  

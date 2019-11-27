@@ -16,10 +16,9 @@
  */
 ?>
 <?php get_header(); ?>
+
 <header>
-<h1>OVO JE NA PAGE PHP U</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non doloremque nobis veritatis porro incidunt in placeat molestiae iure reiciendis. Sequi, nemo dolores doloremque natus laudantium deserunt soluta magnam molestias!</p>
-<h2>samo da se zna ovaj teks se nalazi na stranici page .php</h2>
+<div class="separator"></div>
 <!-- Telo 1  main-column -->
 <div class="main-column">
   <?php

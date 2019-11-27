@@ -26,9 +26,9 @@
           </div>
        <div class='footerDovnArea'>
         
-        <div id="futernav">
-				     <?php wp_nav_menu( array('theme_location' =>'drugi' ));  ?>
-        </div>
+        <!-- <div id="futernav">
+				     ?php wp_nav_menu( array('theme_location' =>'drugi' ));  ?>
+        </div> -->
 
       </div>
      
